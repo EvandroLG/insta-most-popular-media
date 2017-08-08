@@ -28,7 +28,6 @@
 
     getMostPopular: function(obj) {
       var mostPopular = obj.data[0];
-      console.log(obj);
 
       obj.data.forEach(function(item) {
         if (mostPopular.likes.count < item.likes.count) {
