@@ -53,6 +53,7 @@
       el.link.href = mostPopular.link;
       el.likes.innerText = mostPopular.likes.count;
       el.h1.innerText = mostPopular.user.username;
+      el.main.classList.add('on');
     }
   };
 

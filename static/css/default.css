@@ -12,6 +12,12 @@ html, body {
   z-index: 1;
   margin: 0 auto;
   width: 640px;
+  opacity: 0;
+  transition: opacity 1.2s ease-in;
+}
+
+#main.on {
+  opacity: 1;
 }
 
 #main, #main > a {
@@ -26,8 +32,10 @@ html, body {
   background: #FFF;
   opacity: 0.5;
   padding: 5px;
+  font-size: 18px;
 }
 
 #main h1 {
   margin: 5px 0;
+  font-size: 22px;
 }
