@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Most popular recent photo</title>
+  </head>
+  <body>
+
+    <div id="main">
+      <h1></h1>
+
+      <a href="" target="_blank">
+        <img src="" alt="">
+        <span class="likes">&#10084; <span></span> likes</span>
+      </a>
+    </div>
+
+    <script src="/static/js/most-popular-photo.js"></script>
+    <script>
+      (function(global) {
+        global.MostPopularPhoto.requestAPI();
+      }(window));
+    </script>
+  </body>
+</html>
