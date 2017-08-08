@@ -1,5 +1,5 @@
 {
-  "name": "most-popular-recent-photos",
+  "name": "insta-most-popular-media",
   "main": "index.js",
   "dependencies": {
     "express": "4.15.4",

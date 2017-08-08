@@ -1,6 +1,6 @@
 (function(doc, global) {
 
-  global.MostPopularPhoto = {
+  global.MostPopularMedia = {
     getToken: function() {
       var token = global.localStorage.getItem('token');
       var hash = global.location.hash;
@@ -15,8 +15,10 @@
 
     requestAPI: function() {
       var token = this.getToken();
-      var url = ['https://api.instagram.com/v1/users/self/media/recent/',
-                '?access_token={ACCESS_TOKEN}&callback=MostPopularPhoto.updateHTML'].join('');
+      var url = [
+                  'https://api.instagram.com/v1/users/self/media/recent/',
+                  '?access_token={ACCESS_TOKEN}&callback=MostPopularMedia.updateHTML'
+                ].join('');
       url = url.replace('{ACCESS_TOKEN}', token);
 
       var script = doc.createElement('script');
